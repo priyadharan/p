@@ -1,0 +1,11 @@
+body{
+    font-family: Arial,sana-serif;
+    margin:0%;
+    padding:0%;
+    background-image: url('../static/background.jpg');
+}
+p{
+    place-items: center;
+    display:grid;
+    height:25vh;
+}

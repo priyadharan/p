@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style1.css') }}"
+<body>
+    {% block body %}
+    User table
+
+    <table class="'table table-bordered">
+        <thead>
+            <th>SNO</th>
+            <th>PROJECT NAME</th>
+            <th>PROJECT GUIDE</th>
+            
+        </thead>
+        <tbody>
+            {% for row in datas %}
+            <tr>
+                <td>{{loop.index}}</td>
+                <td>{{row.PROJECTNAME}}</td>
+                <td>{{row.PROJECTGUIDE}}</td>
+                
+            </tr>
+            {% endfor %}
+        </tbody>
+
+    </table>
+
+    {% endblock %}
+</body>
+</html>

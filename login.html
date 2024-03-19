@@ -1,0 +1,54 @@
+{% extends 'base.html'%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      {% block title %} 
+      Creative Login page</title>
+      {% endblock %}
+</head>
+<link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+<body>
+  {% block body %}
+  
+    <div class="wrapper">
+
+        <div class="login-box">
+          <form method="Post" action="{{url_for('login') }}">
+            <h2>Login</h2>
+      
+            <div class="input-box">
+              <span class="icon">
+                <ion-icon name="email"></ion-icon>
+              </span>
+              <input type="email" name='email' required>
+              <label>Email</label>
+            </div>
+      
+            <div class="input-box">
+              <span class="icon">
+                <ion-icon name="lock-closed"></ion-icon>
+              </span>
+              <input type="password" name="password" required>
+              <label>Password</label>
+            </div>
+      
+            <div class="remember-forgot">
+              <label><input type="checkbox"> Remember me</label>
+              <a href="#">Forgot Password?</a>
+            </div>
+      
+            <button type="submit">Login</button>
+      
+            <div class="pro-link">
+              <p>Don't have an account? register here! <a href="/register">REGISTER</a></p>
+            </div>
+          </form>
+        </div>
+      
+      </div>
+      {% endblock %}
+</body>
+</html>

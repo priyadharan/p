@@ -1,0 +1,32 @@
+
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title%}
+        index
+        {% endblock %}
+    </title>
+    
+</head>
+
+
+<body>
+    
+    {% block body %}
+    <center>
+        <p class="fw-bold">
+        <h1>WELCOME TO PROJECT MANAGEMNT</h1><br><br>
+        
+        <h3>"Having all your ducks in a Row"</h3>
+        </p>
+        
+            <h3>Getting your foot in the door! <a href="/register">REGISTER</a></h3>
+        
+</center>
+    {% endblock %}
+</body>
+</html>

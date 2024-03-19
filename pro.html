@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Creative project page</title>
+</head>
+<link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+<body>
+    <div class="wrapper">
+
+        <div class="pro-box">
+          <form method="Post" action="{{url_for('pro') }}">
+            <h2>Project Details</h2>
+      
+            <div class="input-box">
+              <span class="icon">
+                <ion-icon name="projectname"></ion-icon>
+              </span>
+              <input type="projectname" name="projectname"required>
+              <label>Project Name</label>
+            </div>
+
+            <div class="input-box">
+                <span class="icon">
+                  <ion-icon name="projectguide"></ion-icon>
+                </span>
+                <input type="projectguide" name="projectguide" required>
+                <label>Project Guide</label>
+              </div>
+
+              <div class="input-box">
+                <span class="icon">
+                  <ion-icon name="projectdecription"></ion-icon>
+                </span>
+                <input type="projectdescription" name="projectdescription" required>
+                <label>Project Description</label>
+              </div>
+            <button type="submit">submit</button>
+      
+            
+          </form>
+        </div>
+      
+      </div>
+</body>
+</html>

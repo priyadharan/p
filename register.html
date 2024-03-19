@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Creative register page</title>
+</head>
+<link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+<body>
+    <div class="wrapper">
+
+        <div class="register-box">
+          <form action="">
+            <h2>Register</h2>
+      
+            <div class="input-box">
+              <span class="icon">
+                <ion-icon name="mail"></ion-icon>
+              </span>
+              <input type="email" required>
+              <label>Email</label>
+            </div>
+            <div class="input-box">
+                <span class="icon">
+                  <ion-icon name="rollnumber"></ion-icon>
+                </span>
+                <input type="rollnumber" required>
+                <label>Roll Number</label>
+              </div>
+              <div class="input-box">
+                <span class="icon">
+                  <ion-icon name="phonenumber"></ion-icon>
+                </span>
+                <input type="phonenumber" required>
+                <label>Phone Number</label>
+              </div>
+        
+        
+      
+            <div class="input-box">
+              <span class="icon">
+                <ion-icon name="lock-closed"></ion-icon>
+              </span>
+              <input type="password" required>
+              <label>Password</label>
+            </div>
+            <div class="input-box">
+                <span class="icon">
+                  <ion-icon name="lock-closed"></ion-icon>
+                </span>
+                <input type="confirmpassword" required>
+                <label>Confirm Password</label>
+              </div>
+        
+      
+            <button type="submit">REGISTER</button>
+      
+            <div class="login-link">
+              <p>Already have an account.Just Login Here<a href="/login">  LOGIN</a></p>
+            </div>
+          </form>
+        </div>
+      
+      </div>
+</body>
+</html>
